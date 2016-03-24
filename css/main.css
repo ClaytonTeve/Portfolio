@@ -1,0 +1,217 @@
+/***
+
+COLORS
+
+#92CAC7 - Light Blue ---Portfolio
+#ECB941 - Golden Yellow ---Accent
+#C31F39 - Red ---About
+
+***/
+
+.container {
+	max-width: 1000px;
+}
+
+/************************************
+HEADER AND NAVIGATION
+*************************************/
+
+
+.header {
+	border-top: 30px solid #92CAC7;
+	color: #333;
+}
+
+.header .nav {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.header .nav li {
+	width: 45%;
+	margin: 0 2.5%
+}
+
+.header .nav li a {
+	margin: 10px;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+}
+
+.logo {
+	margin-top: 10px;
+	display: inline;
+}
+
+.header h1 {
+	display: inline-block;
+	font-size: 26px;
+	vertical-align: bottom;
+}
+
+.nav-justified {
+	width: 45%;
+	display: inline-block;
+}
+
+.header .nav li.portfolio a {
+	background-color: #92CAC7;
+}
+
+.header .nav li.about a {
+	background-color: #C31F39;
+}
+
+.header .nav>li>a:focus, .header .nav>li>a:hover {
+	background-color: #ECB941;
+}
+
+.header .nav li.active a {
+	border-bottom: 5px solid #ECB941;
+}
+
+
+
+/************************************
+MAIN GALLERY
+*************************************/
+
+
+.main {
+	margin-top: 30px;
+}
+
+.main h1 {
+	padding: 0 18px 30px;
+}
+
+.main h1 span {
+	padding: 0 20px 0 0;
+	border-bottom: 10px solid #ECB941;
+}
+
+.thumbnail {
+	border: 1px solid #ECB941;
+	border-radius: 0px;
+}
+
+/************************************
+ABOUT
+*************************************/
+
+
+.about-main {
+	margin-top: 50px;
+}
+
+.profile {
+	background: url('../img/aboutprofile.jpg') no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	margin: 0 35px;
+}
+
+.about-main p {
+	font-size: 18px;
+	text-indent: 15px;
+}
+
+.about-main .col-md-8 {
+	margin-bottom: 10px;
+}
+
+
+/************************************
+PROJECT PAGES
+*************************************/
+
+.project-main .container .row img {
+	width: 95%;
+	margin: 1% 2.5% 1%;
+	border: 2px solid #ECB941;
+}
+
+.project-main h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.project-main p {
+	margin-top: 30px;
+}
+
+.project-main h1 span {
+	padding: 0 20px 0 0;
+	border-bottom: 5px solid #ECB941;
+}
+
+.project-main .nav {
+	margin-bottom: 30px;
+}
+
+.project-main .back-portfolio{
+
+margin: 3% 0 0 0;
+	
+}
+
+.project-main .right {
+	float: right;
+}
+
+.project-main a {
+	text-decoration: underline;
+	color: #bbb;
+}
+
+
+/************************************
+FOOTER
+*************************************/
+
+.footer {
+	margin-top: -20px;
+	background-color: #ECB941;
+	border-bottom: 30px solid #92CAC7;
+	padding: 30px 10px;
+}
+
+.footer p,
+.footer a {
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+}
+.footer .col-xs-6 {
+
+}
+.footer ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+.twitter img,
+.github img,
+.email img {
+	height: 28px;
+	width: 28px;
+	padding-right: 10px;
+}
+
+.recliner {
+
+	margin-top: 20px;
+	float: right;
+	margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
