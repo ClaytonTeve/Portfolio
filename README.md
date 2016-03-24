@@ -2,7 +2,7 @@
 This is my personal portolio website. My work broken into a few different worlds. A lot of what I learned with my Graphic Design Degree from OSUIT was related to marketing, advertising and branding so you can see a healthy dose of all of those. 
 The end goal is for me to have all of these projects uploaded soon.
 
-1. Vital Lipbalm
+1. Vital Lipbalm -done-
 2. AntiSmoking/Apex
 3. German Food Ad
 4. Havana Nights
