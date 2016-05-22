@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Fantasy Game</title>
+    	<link rel="stylesheet" href="css/normalize.css">
+    	<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    	<link rel="stylesheet" href="main.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		
+	<div class= "character-creation">
+		
+		<h1>Points to Spend:</h1><h1 class="pointsToSpend"></h1>
+		<form id="nameform" method="POST" action='#' onsubmit="return false;" >
+				<label for="character_name"><h2>Name:</h2></label>
+				<input type="text" name="name" id="character_name"></br>
+			</form>
+		<div class="stats strength">
+			<h2>Strength:</h2>
+			<form id='myform' method='POST' action='#'>
+				<input type='button' value='-' class='qtyminus' field='strength' />
+    			<input type='text' name='strength' value='10' class='qty' disabled />
+    			<input type='button' value='+' class='qtyplus' field='strength' />
+			</form>
+		</div>
+		<div class="stats dexterity">
+			<h2>Dexterity:</h2>
+			<form id='myform' method='POST' action='#'>
+    			<input type='button' value='-' class='qtyminus' field='dexterity' />
+    			<input type='text' name='dexterity' value='10' class='qty' disabled />
+    			<input type='button' value='+' class='qtyplus' field='dexterity' />
+			</form>
+		</div>
+		<div class="stats consitution">
+			<h2>Consitution:</h2>
+			<form id='myform' method='POST' action='#'>
+    			<input type='button' value='-' class='qtyminus' field='consitution' />
+    			<input type='text' name='consitution' value='10' class='qty' disabled />
+    			<input type='button' value='+' class='qtyplus' field='consitution' />
+			</form>
+			<div>
+			<button class="statSubmit" type="button">Choose These Stats</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="character-sheet">
+
+		<form action="index.html" method="post">
+			<h1>Character Sheet</h1>
+			<div class="top">
+				<label for="name">Character Name:</label>
+				<input type="text" id="name" name="character_name">
+
+				<label for="health">Hit Points:</label>
+				<input type="text" id="health" name="character_health" class="form_stat">
+			
+			</div>
+			<div class="left">
+				<h2><span>Stats</span></h2>
+
+				<label for="strength">Strength:</label>
+				<input type="text" id="strength" name="character_strength" class="form_stat">
+				
+				<label for="dexterity">Dexterity:</label>
+				<input type="text" id="dexterity" name="character_dexterity" class="form_stat">
+
+
+				<label for="consitution">Consitution:</label>
+				<input type="text" id="consitution" name="character_consitution" class="form_stat">
+			</div>
+			<div class="right">
+				<h2><span>Equipment</span></h2>
+
+				<label for="weapon">Weapon:</label>
+				<input type="text" id="weapon" name="character_weapon"></br>
+
+				<label class="substat" for="weaponMod">Attack Modifier:</label>
+				<input type="text" id="weaponMod" name="character_weaponMod" class="form_stat">
+
+				<label class="substat" for="AttDie">Damage Die:</label>
+				<input type="text" id="AttDie" name="character_AttDie" class="form_stat">
+
+
+				</br><label for="armor">Armor:</label>
+				<input type="text" id="armor" name="character_armor"></br>
+
+				<label class="substat" for="armorRating">Armor Rating:</label>
+				<input type="text" id="armorRating" name="character_armorRating" class="form_stat">
+
+			</div>
+		</form>
+
+		<div class="clearfix"></div>
+
+	</div>
+
+	<div class="character-sheetmin">
+		<h1>Character Sheet</h1>
+		<img src="img/CharSheetDropdownArrow.svg" alt="drop down arrow" width="30" height="30px"> 
+	</div>
+	
+	<div class="character-confirm">
+
+		<div class="enemy try-again">
+			<h2>Reroll Character</h2>
+		</div>
+
+		<div class="enemy confirm">
+			<h2>Looks Good</h2>
+		</div>
+		
+	</div>
+	
+	<div class="foes"> 
+		<h1 class="center">Choose a foe!</h1>
+
+		<div class="enemy battlefoe forHare">
+			<h2>Forest Hare</h2>
+		</div>
+		<div class="enemy battlefoe gobFish">
+			<h2>Goblin Fisher</h2>
+		</div>
+
+	</div>
+
+	<div class="battle">
+		<div class="whosfighting">
+			<div class="mainchar">
+				<div class='right-avitar'></div>
+				<div class="enStats clearfix"></div>
+			</div>
+			<div class="enemychar">
+				<div class='left-avitar'></div>
+				<div class="mcStats clearfix"></div>
+
+			</div>
+		</div>
+		<ul>
+			<li class="enemy attack">
+				<h2>Attack</h2>
+			</li>
+			<!-- <li class="enemy item">
+				<h2>Item</h2>
+			</li> -->
+			<li class="enemy flee">
+				<h2>Flee</h2>
+			</li>
+		</ul>
+		<div class="battle-readout">
+			<h4 class="readout">It's time to fight!</h4>
+		</div>
+	</div>
+	<div class="game-over">
+		<h1>GAME OVER</h1>
+		<h2 class="new-game">new game</h2>
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="ObjectsFantasy.js"></script>
+	</body>
+</html>

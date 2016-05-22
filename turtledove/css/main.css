@@ -1,0 +1,229 @@
+/******************************
+DIALOG FORM
+*******************************/
+
+
+textarea,
+input[type=text]{
+margin-top: 5px;
+margin-bottom: 20px;
+width: 96%;
+border-radius: 5px;
+border: 1px solid #a0a0a0;
+padding: 5px 0;
+}
+
+#name,#email,#msg{
+padding-left: 10px;
+}
+
+
+input[type=submit]{
+width:30%;
+border: 1px solid #59b4d4;
+background: #0094FF;
+color: #eeeeee;
+padding: 3px 0px;
+border-radius: 5px;
+margin-left: 33%;
+cursor:pointer;
+}
+
+input[type=submit]:hover{
+border: 1px solid #666666 ;
+background: #0078a3;
+color: white;
+}
+
+.ui-dialog-titlebar {
+	background-color: black;
+}
+
+.ui-dialog .ui-dialog-content {
+padding: 2em;
+}
+
+ #small-turtledove svg {
+ 	margin-top: -40px;
+ 	margin-left: -18px;
+ }
+
+ #small-turtledove {
+ 	width: 280px;
+ 	margin-bottom: -70px;
+ 	margin-left: auto;
+ 	margin-right: auto; 
+ }
+
+h4 {
+	margin-top: 25px;
+	margin-bottom: -10px;
+}
+
+p {
+ 	font-size: 14px;
+ 	line-height: 1.35;
+ 	margin-bottom: 20px;
+ }
+
+/******************************
+LAYOUT
+*******************************/
+
+#turtle-dove {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: -100px;
+	margin-top: -50px;
+}
+
+#turtle-dove svg {
+	width: 100%;
+	margin: auto;
+	margin-bottom: -130px;
+}
+
+#wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.color-picker {
+	display: inline-block;
+	min-width: 200px;
+	width: 31%;
+	padding: 0 1% 1%;
+	margin: .75% auto;
+	background-color: #eee;
+	font-size: .7em;
+}
+
+.colorboxes {
+	width: 100%;
+	margin: auto;
+}
+
+
+.order-button {
+	display: none;
+	z-index: 10;
+	position: relative;
+	float: right;
+	right: 4%;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	font-size: .85em;
+	background-color: #0094FF;
+	color: white;
+	border-radius: 10px;
+	border: 3px solid #0C52E8;
+	clear: both;
+}
+
+.active-button {
+	cursor: pointer;
+}
+
+.active-button:hover {
+	background-color: #003399;
+	border: 3px solid #0094FF;
+}
+
+
+/******************************
+COLOR SELECTION
+*******************************/
+
+
+.selected {
+	margin: 0px;
+	border: 3px solid #111;
+}
+
+
+ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  	display: inline-block;
+  	padding:15px;
+  	margin: 3px;
+  	border: 1px solid #777;
+  	color:#000;
+  	text-decoration:none;
+  	cursor: pointer;
+}
+
+.secondary-color,
+.primary-color,
+.detail,
+.wings,
+.main-body,
+.inner-wing {
+	 transition: all 0.6s ease;
+}
+
+.secondary-color { fill: #ddd; } 
+
+.primary-color { fill: #ddd; }
+
+.detail { fill: #ddd; }
+
+.wings { fill: #eee; }
+
+.main-body { fill: #eee;}
+
+.inner-wing { fill: #eee;}
+
+
+
+@media screen and (max-width: 1000px) {
+
+	.color-picker {
+		width: 47%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.color-picker {
+		width: 95%;
+	}
+
+	li {
+		padding: 10px;
+	}
+	#turtle-dove {
+		margin: -170px 0 -110px 0;
+	}
+
+	#turtle-dove svg {
+		margin-bottom: -100px;
+	}
+
+
+	.order-button {
+		margin-bottom: 0;
+		margin: 0 auto;
+		right: 15%;
+		width: 70%;
+		font-size: .45em;
+		letter-spacing: 1.7;
+		height: 35px;
+}
+
+	.order-button h1 {
+		padding: 0;
+		margin-top: 3%;
+	}
+
+
+}
+
+
+

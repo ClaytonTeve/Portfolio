@@ -1,0 +1,284 @@
+.clearfix { clear: both; }
+
+body {
+	font-family: 'Helvetica', sans-serif;
+}
+
+.character-creation {
+	background: #efefef;
+	padding: 30px;
+	margin: 0 auto;
+	width: 600px;
+	margin-top: 50px;
+	border: 2px solid #333;
+}
+
+.character-creation > h1,
+.character-creation label h2,
+.stats > .plus,
+.stats > .minus,
+.stats > h2,
+.stats > h3,
+.stats > form
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.character-confirm {
+	width: 600px;
+	margin: auto;
+	display: none;
+}
+
+.character-confirm > div {
+	display: inline-block;
+	width: 30%;
+	margin: 20px 2%;
+}
+
+.character-confirm :nth-child(2) {
+	float: right;
+}
+
+/* the - and + parts for stat point buy*/
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: none;
+    margin: 0;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
+button,
+.enemy {
+  	display: none;
+ 	padding: 19px 39px 18px 39px;
+  	color: #fff;
+  	background-color: #333;
+  	font-size: 18px;
+  	text-align: center;
+  	font-style: normal;
+  	width: 300px;
+  	border: 1px solid #000;
+  	border-width: 1px 1px 3px;
+  	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  	margin-top: 20px;
+  	margin-bottom: 10px;
+}
+
+.character-creation {
+	padding: 2.5%;
+}
+
+.character-sheet form input {
+	height: 20px;
+}
+
+.form_stat {
+	height: 25px;
+	width: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.left {
+	width: 200px;
+	float: left;
+}
+
+.right {
+	width: 400px;
+	float: right;
+}
+
+.character-sheet input {
+	margin-right: 15px;
+	font-size: 18px;
+}
+
+.right label,
+.left label {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.character-sheet h1,
+.character-sheetmin h1 {
+	/*border: 2px solid black;*/
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+}
+
+.character-sheetmin {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	display: none;
+	background: #333;
+}
+
+.character-sheet h1 {
+	background-color: #333;
+	margin-bottom: 10px;
+}
+
+.character-sheet h2 {
+	margin-top: 30px;
+}
+
+.character-sheet h2 span {
+	padding-right: 10px;
+	border-bottom: 2px solid black;
+}
+
+.character-sheet {
+	display: none;
+	width: 600px;
+	margin: 50px auto;
+	padding: 35px;
+	border: 2px solid black;
+}
+
+.foes { 
+	display: none;
+	margin-top: 140px;
+}
+
+.substat {
+	color: #aaa;
+}
+
+.center {
+	width: 300px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.enemy {
+	text-align: center;
+	display: block;
+	background: #333;
+	color: #fff;
+	padding: 10px 30px;
+	width: 300px;
+	margin: 30px auto;
+}
+
+.enemy:hover,
+button:hover,
+.character-sheetmin:hover,
+.new-game:hover {
+	cursor: pointer;
+	background-color: #666;
+}
+
+.battle {
+	display: none;
+	width: 600px;
+	margin: 50px auto;
+}
+
+.battle ul {
+	width: 600px;
+	margin: 10px auto;
+}
+
+.battle ul li {
+	display: inline-block;
+	width: 30%;
+	margin: 2.5%;
+
+}
+
+.left-avitar,
+.right-avitar {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	display: inline-block;
+	border: 3px solid #333;
+
+}
+
+.battle h3 {
+	margin-top: -25px;
+
+}
+
+.mainchar,
+.enemychar {
+	width: 300px;
+}
+
+.enemychar {
+	float: left;
+}
+
+.mainchar {
+	float: right;
+}
+
+
+.left-avitar {
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-image: url('img/Aimril.jpg');
+}
+.right-avitar{
+	float: right;
+	background-position: center;
+	background-size: cover;
+}
+
+.game-over {
+	display: none;
+	width: 50%;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10% 25% 20%;
+	font-size: 2.5em;
+	height: 50%;
+	margin: 0;
+}
+
+.battle p {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.game-over h2 {
+	color: #ddd;
+	font-size: 1.2em;
+	border: 2px solid #fff;
+	background: #999;
+	padding: 10px 0px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.battle-readout {
+	border: 2px solid #333;
+	padding: 1px 50px;
+	width: 500px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+

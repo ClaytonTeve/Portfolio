@@ -8,6 +8,10 @@ COLORS
 
 ***/
 
+body {
+	background-color: #fff;
+}
+
 .container {
 	max-width: 1000px;
 }
@@ -101,6 +105,10 @@ MAIN GALLERY
 .thumbnail {
 	border: 1px solid #ECB941;
 	border-radius: 0px;
+}
+
+.vidthumb {
+	width: 100%;
 }
 
 /************************************
